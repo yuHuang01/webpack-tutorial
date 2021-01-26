@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './webpack.css';
 import WebpackImg from './wpimg.png';
+import Data from './data.xml';
+import Note from './data.csv';
 
 function component() {
   const element = document.createElement('div');
@@ -12,7 +14,10 @@ function component() {
   myImg.src = WebpackImg;
 
   element.appendChild(myImg);
-  
+
+  console.log(Data);
+  console.log(Note)
+
   return element;
 };
 
